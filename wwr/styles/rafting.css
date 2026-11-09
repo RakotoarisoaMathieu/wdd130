@@ -114,6 +114,7 @@ nav a {
 /* History and Adventure */
 section {
     text-align: center;
+    background-color: var(--accent2-color);
 }
 
 section h2 {
@@ -125,7 +126,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid var(--primary-color);
+    border-top: 2px solid var(--secondary-color);
 }
 
 /* Social Media Links */
