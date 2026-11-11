@@ -1,3 +1,12 @@
+/* Color Variables */
+:root {
+    --primary-color: #333333;
+    --secondary-color: #eeeeee;
+    --text-color: #333333;
+    --white-color: #ffffff;
+    --shadow-color: gray;
+}
+
 /* Universal Selector */
 * {
     margin: 0;
@@ -15,7 +24,7 @@ footer {
 
 /* Navigation */
 nav {
-    background-color: #333333;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
@@ -27,7 +36,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: var(--white-color);
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -47,8 +56,8 @@ main {
 
 /* Heading */
 h1 {
-    color: #333333;
-    border-bottom: 2px solid #333333;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--primary-color);
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
@@ -57,9 +66,9 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 2px solid #333333;
+    border: 2px solid var(--primary-color);
     padding: 2px;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px var(--shadow-color);
     display: block;
     margin: 15px auto;
 }
@@ -95,7 +104,7 @@ aside h2 {
 /* Footer */
 footer {
     margin-top: 30px;
-    border-top: 2px solid #333333;
+    border-top: 2px solid var(--primary-color);
     text-align: center;
     padding-top: 10px;
 }
@@ -103,8 +112,8 @@ footer {
 /* Class Selectors */
 .box {
     margin: 1rem;
-    border: 1px solid #333333;
+    border: 1px solid var(--primary-color);
     padding: 1rem;
-    background-color: #eeeeee;
-    color: #333333;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
