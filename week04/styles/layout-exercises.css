@@ -57,3 +57,70 @@ div {
     margin: .25rem;
     background-color: #abd;
 }
+
+/* EXERCISE 1: Center paragraphs horizontally and vertically */
+
+.exercise1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* EXERCISE 1: Center paragraphs using Flexbox */
+
+.one.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* EXERCISE 1: Center paragraphs using CSS Grid */
+
+.one.grid {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+/* EXERCISE 2: Responsive layout using Flexbox */
+
+.container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.two {
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container2 {
+        flex-direction: column;
+    }
+
+    .two {
+        width: 100%;
+    }
+}
+
+/* EXERCISE 3: Create a table using CSS Grid */
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.three {
+    text-align: center;
+}
+
+.columns-3 {
+    grid-column: 1 / 4;
+}
